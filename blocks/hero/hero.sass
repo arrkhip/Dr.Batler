@@ -1,0 +1,120 @@
+/*
+ * ========================
+ * HERO
+ * ========================
+ */
+.hero
+	position: relative
+	padding-top: 333px
+	padding-bottom: 200px
+	background: url('../img/hero-bg.png') no-repeat center / cover
+	
+	.grid
+		display: flex
+
+	&__info
+		max-width: 540px
+		margin-left: auto
+
+	&__title
+		margin-bottom: 30px
+		font: 400 45px/61px $font-main
+		color: #1a1a1a
+		text-transform: uppercase
+
+	&__descr
+		margin-bottom: 10px
+		font: 400 18px/26px $font-main
+		color: #4d4d4d
+
+		span 
+			display: block
+			color: #78afd0
+			text-transform: uppercase
+
+	&__box
+		position: relative
+	
+	&__diploma
+		
+	&__sign
+		position: absolute
+		top: -36px
+		right: 0
+
+	&__scroll
+		position: absolute
+		left: calc(50% - 22px)
+		bottom: -30px
+		width: 44px
+		height: 100px
+		background-color: $color-secondary
+		border-radius: 22px
+		transition: transform .5s ease
+
+		&:hover
+			transform: translateY(5px)
+
+		&::before,
+		&::after
+			position: absolute
+			left: calc(50% - 10px)
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 10px 10px 0 10px
+			border-color: #ffffff transparent transparent transparent
+		
+		&::before
+			top: 54px
+			opacity: .5
+
+		&::after
+			top: 72px
+
+
+	@include width-md
+		padding-top: 160px
+		padding-bottom: 140px
+
+		&__info
+			max-width: 342px
+
+		&__title
+			margin-bottom: 20px
+			font-size: 28px
+			line-height: 37px
+
+		&__descr
+			font-size: 17px
+			line-height: 22px
+
+		&__box
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&__sign
+			position: static
+			width: 164px
+
+
+	@include width-sm
+		padding-top: 120px
+		padding-bottom: 100px
+		background-position: right center
+
+		&__info
+			margin: 0 auto
+
+		&__title
+			font-size: 24px
+			line-height: 32px
+
+		&__descr
+			font-size: 15px
+			line-height: 20px
+
+		&__scroll
+			height: 90px
