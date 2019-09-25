@@ -5,7 +5,8 @@ $('.js-header__switch').click(function() {
 	$('body').toggleClass('scroll-hidden');
 });
 
-// slider 
+
+// slider about
 var swiper = new Swiper('.about__slider', {
   slidesPerView: 1,
   loop: true,
@@ -14,4 +15,29 @@ var swiper = new Swiper('.about__slider', {
     el: '.about__slider-pagination',
     clickable: true,
   },
+});
+
+
+// slider doctors
+var swiper = new Swiper('.doctors__slider', {
+  slidesPerView: 3,
+  loop: true,
+  speed: 500,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.doctors__slider-btn-next',
+    prevEl: '.doctors__slider-btn-prev',
+  },
+  breakpoints: {
+    992: {
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    540: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    }
+  }
 });

@@ -1361,3 +1361,83 @@ input[type=checkbox]:checked + label:before {
     font-size: 24px;
   }
 }
+
+/*
+ * ========================
+ * DOCTORS
+ * ========================
+ */
+.doctors {
+  padding-top: 116px;
+  padding-bottom: 135px;
+}
+
+.doctors .grid {
+  overflow: hidden;
+}
+
+.doctors__slider {
+  position: relative;
+  margin-top: 65px;
+}
+
+.doctors__slider-btn-prev, .doctors__slider-btn-next {
+  position: absolute;
+  top: calc(50% - 10px);
+  z-index: 1;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ffffff transparent transparent;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.doctors__slider-btn-prev:hover, .doctors__slider-btn-next:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.doctors__slider-btn-prev {
+  left: 10px;
+}
+
+.doctors__slider-btn-next {
+  right: 10px;
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/*
+ * ========================
+ * CARD-PERSON
+ * ========================
+ */
+.card-person {
+  text-align: center;
+}
+
+.card-person__banner {
+  margin-bottom: 35px;
+}
+
+.card-person__name {
+  margin-bottom: 20px;
+  font: 700 20px/1 "Circe", sans-serif;
+  color: #1a1a1a;
+}
+
+.card-person__post {
+  color: #78afd0;
+  margin-bottom: 25px;
+}
+
+.card-person__list-item {
+  line-height: 26px;
+  color: #666666;
+}
