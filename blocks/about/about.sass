@@ -1,0 +1,87 @@
+/*
+ * ========================
+ * ABOUT
+ * ========================
+ */
+.about 
+	position: relative
+
+	&__slider-pagination
+		position: absolute
+		bottom: 85px !important
+		left: calc(50% + 50px) !important
+		z-index: 1
+
+		span
+			width: 7px
+			height: 7px
+			background-color: #eff2f0
+			margin: 0 !important
+
+			&:not(:last-child)
+				margin-right: 17px !important
+
+			&.swiper-pagination-bullet-active
+				background-color: #78afd0
+
+	&__box
+		display: flex
+	
+	&__banner,
+	&__info
+		width: 50%
+
+	&__banner img 
+		object-fit: cover
+		height: 100%
+	
+	&__info
+		padding-top: 130px
+		padding-bottom: 200px
+		padding-left: 50px
+		background-color: #313c4d
+
+		&-wrap
+			max-width: 432px
+	
+	&__title
+		margin-bottom: 35px
+		font: 700 34px/1.2 $font-main
+		text-transform: uppercase
+		color: $white
+
+		span
+			color: #78afd0
+
+	&__descr
+		line-height: 26px
+		color: rgba(255, 255, 255, .5)
+
+
+	@include width-md()
+		&__slider-pagination
+			bottom: 40px !important
+			left: 35px !important
+
+		&__banner
+			display: none
+
+		&__info
+			width: 100%
+			padding: 80px 35px 120px
+
+			&-wrap
+				max-width: 100%
+
+
+	@include width-sm()
+		&__slider-pagination
+			left: 15px !important
+
+		&__info
+			padding: 70px 15px 110px
+
+		&__title
+			font-size: 24px
+			line-height: 1.4
+			margin-bottom: 20px
