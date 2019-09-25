@@ -41,3 +41,15 @@ var swiper = new Swiper('.doctors__slider', {
     }
   }
 });
+
+
+// slider reviews
+var swiper = new Swiper('.reviews__slider', {
+  slidesPerView: 1,
+  loop: true,
+  speed: 500,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.reviews__slider-btn-next'
+  }
+});

@@ -1441,3 +1441,59 @@ input[type=checkbox]:checked + label:before {
   line-height: 26px;
   color: #666666;
 }
+
+/*
+ * ========================
+ * REVIEWS
+ * ========================
+ */
+.reviews {
+  position: relative;
+  padding: 95px 0;
+  background: url("../img/reviews-bg.png") no-repeat center/cover;
+}
+
+.reviews__slider-btn-next {
+  position: absolute;
+  left: calc(50% - 10px);
+  bottom: 25px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.reviews__slider-btn-next:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.reviews__item {
+  max-width: 762px;
+  margin: 0 auto;
+}
+
+.reviews__text {
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reviews__info {
+  color: #ffffff;
+  text-align: right;
+}
+
+.reviews__info span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #78afd0;
+}

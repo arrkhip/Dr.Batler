@@ -1,0 +1,46 @@
+/*
+ * ========================
+ * REVIEWS
+ * ========================
+ */
+.reviews 
+	position: relative
+	padding: 95px 0
+	background: url('../img/reviews-bg.png') no-repeat center/cover
+
+	&__slider-btn-next
+		position: absolute
+		left: calc(50% - 10px)
+		bottom: 25px
+		z-index: 1
+		width: 0
+		height: 0
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 10px 10px 0 10px
+		border-color: #ffffff transparent transparent transparent
+		@include trs()
+
+		&:hover
+			cursor: pointer
+			opacity: .8
+
+	&__item
+		max-width: 762px
+		margin: 0 auto
+	
+	&__text
+		margin-bottom: 20px
+		font-style: italic
+		line-height: 21px
+		color: $white
+	
+	&__info
+		color: $white
+		text-align: right
+
+		span 
+			display: inline-block
+			margin-right: 10px
+			color: #78afd0
