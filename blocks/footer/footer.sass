@@ -1,0 +1,89 @@
+/*
+ * ========================
+ * FOOTER 
+ * ========================
+ */
+.footer 
+	margin-top: 65px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 40px
+		padding-bottom: 40px
+		border-top: 1px solid #E0E0E0
+
+	&__title
+		margin-bottom: 18px
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		color: $black
+
+	&__list
+
+	&__item
+		&:not(:last-child)
+			margin-bottom: 10px
+
+	&__link
+		font-size: 14px
+		font-weight: 300
+		color: $black
+		@include trs()
+
+		&:hover
+			color: $color-secondary
+
+	&__mailing
+		max-width: 238px
+		
+		&-title
+			margin-bottom: 25px
+			font-size: 16px
+			font-weight: 700
+			color: #BDBDBD
+		
+		&-input
+			width: 100%
+			margin-bottom: 17px
+		
+		&-btn
+			padding: 0
+			border: none
+			margin: 0
+			font-size: 18px
+			font-weight: 300
+			color: $color-secondary
+			background-color: transparent
+
+			&:hover
+				cursor: pointer
+
+
+	@include width-md
+
+		&__mailing
+			max-width: 200px
+
+			&-input
+				height: 45px
+				line-height: 45px
+
+	
+	@include width-sm
+
+		&__col
+			width: 100%
+			
+
+			&:nth-child(2),
+			&:nth-child(3)
+				width: 50%
+				margin: 35px 0
+
+		&__logo
+			display: inline-block
+			width: 120px
