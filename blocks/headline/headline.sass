@@ -1,0 +1,28 @@
+/*
+ * ========================
+ * HEADLINE 
+ * ========================
+ */
+.headline 
+	text-align: center
+
+	&__title
+		display: inline-block
+		padding-bottom: 10px
+		border-bottom: 3px solid $color-secondary
+		margin-bottom: 25px
+		font: 700 39px/1 $font-main
+		text-transform: uppercase
+		color: #1a1a1a
+
+	&__descr
+		max-width: 544px
+		margin: 0 auto
+		line-height: 26px
+		color: #666666
+
+	@include width-sm()
+		&__title
+			padding-bottom: 6px
+			margin-bottom: 18px
+			font-size: 24px

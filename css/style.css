@@ -1327,3 +1327,37 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 20px;
   }
 }
+
+/*
+ * ========================
+ * HEADLINE
+ * ========================
+ */
+.headline {
+  text-align: center;
+}
+
+.headline__title {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #69afd4;
+  margin-bottom: 25px;
+  font: 700 39px/1 "Circe", sans-serif;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.headline__descr {
+  max-width: 544px;
+  margin: 0 auto;
+  line-height: 26px;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .headline__title {
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+}
