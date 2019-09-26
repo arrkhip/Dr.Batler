@@ -18,6 +18,7 @@
 
 	<link rel="stylesheet" href="css/vendor/normalize/normalize.css" />
 	<link rel="stylesheet" href="css/vendor/swiper/swiper.min.css" />
+	<link rel="stylesheet" href="css/vendor/fancybox/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -44,7 +45,7 @@
 					<a href="#"><img src="img/icons/i-viber.png" alt="" /></a>
 					<a href="#"><img src="img/icons/i-whatsapp.png" alt="" /></a>
 				</div>
-				<button class="btn header__btn">Позвонить dr. Batler</button>
+				<a data-fancybox data-src="#modal" href="javascript:;" class="btn header__btn">Позвонить dr. Batler</a>
 				<a href="#" class="header__logo">
 					<img src="img/logo.png" alt="" />
 				</a>
@@ -65,7 +66,9 @@
 				<p class="hero__descr"><span>Батлер Габриель Амиранович</span>Дипломированный специалист из Израиля<br>Челюстно-лицевой хирург</p>
 				<div class="hero__box">
 					<div class="hero__diploma">
-						<img src="img/diplom-sm.png" alt="" />
+						<a href="img/diplom.jpg" data-fancybox="images">
+							<img src="img/diplom-sm.png" alt="" />
+						</a>
 					</div>
 					<div class="hero__sign">
 						<img src="img/signature.png" alt="" />
@@ -133,7 +136,7 @@
 				<div class="services__form-title">Запишитесь на беседу</div>
 				<input type="text" class="input" name="name" placeholder="Как вас зовут" />
 				<input type="text" class="input" name="phone" placeholder="Ваш телефон" />
-				<button class="btn services__form-btn">Записаться</button>
+				<a data-fancybox data-src="#modal-thanks" href="javascript:;" class="btn services__form-btn">Записаться</a>
 			</form>
 		</div>
 	</section>
@@ -328,8 +331,25 @@
 	</footer>
 
 
+	<!-- Modal windows -->
+	<form class="modal-thanks" id="modal-thanks">
+		<div class="modal-thanks__logo">
+			<img src="img/logo-vertical.png" alt="" />
+		</div>
+		<p class="modal-thanks__descr">Спасибо! В ближайшее время<br>мы с вами свяжемся</p>
+	</form>
+
+
+	<form class="modal" id="modal">
+		<div class="modal__title">Запишитесь на беседу</div>
+				<input type="text" class="input" name="name" placeholder="Как вас зовут" />
+				<input type="text" class="input" name="phone" placeholder="Ваш телефон" />
+				<button class="btn modal__btn">Записаться</button>
+	</form>
+
 	<script src="scripts/vendor/jquery/jquery-3.1.1.min.js"></script>
 	<script src="scripts/vendor/swiper/swiper.min.js"></script>
+	<script src="scripts/vendor/fancybox/jquery.fancybox.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU"
   type="text/javascript"></script>
 	<script src="scripts/main.js"></script>

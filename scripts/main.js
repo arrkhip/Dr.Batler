@@ -6,6 +6,7 @@ $('.js-header__switch').click(function() {
 });
 
 
+//header fixed
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 200) {
         $('.header').addClass('fixed');
