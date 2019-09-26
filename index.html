@@ -22,9 +22,40 @@
 </head>
 <body>
 
-<!-- 	<header class="header">
-		
-	</header> -->
+	<header class="header">
+		<div class="grid">
+			<div class="header__logo-mobile">
+				<img src="img/logo-sm.png" alt="" />
+			</div>
+			<div class="js-header__switch header__switch">
+				<span></span>
+			</div>
+			<div class="header__inner">
+				<div class="header__phone">
+					<img src="img/icons/i-phone.png" alt="" />
+					<a href="tel:74950239895">+7 (495) 023-98-95</a>
+				</div>
+				<div class="header__email">
+					<img src="img/icons/i-message.png" alt="" />
+					<a href="mailto:info@drbatler.com">info@drbatler.com</a>
+				</div>
+				<div class="header__social">
+					<a href="#"><img src="img/icons/i-telegram.png" alt="" /></a>
+					<a href="#"><img src="img/icons/i-viber.png" alt="" /></a>
+					<a href="#"><img src="img/icons/i-whatsapp.png" alt="" /></a>
+				</div>
+				<button class="btn header__btn">Позвонить dr. Batler</button>
+				<a href="#" class="header__logo">
+					<img src="img/logo.png" alt="" />
+				</a>
+				<nav class="header__nav">
+					<a href="#services" class="header__nav-link">Услуги</a>
+					<a href="#doctors" class="header__nav-link">Врачи</a>
+					<a href="#contacts" class="header__nav-link">Контакты</a>
+				</nav>
+			</div>
+		</div>
+	</header>
 
 
 	<section class="hero">
@@ -46,7 +77,7 @@
 	</section>
 
 
-	<section class="services">
+	<section class="services" id="services">
 		<div class="grid">
 			<div class="services__list">
 				<div class="services__card">
@@ -156,7 +187,7 @@
 	</section>
 
 
-	<section class="doctors">
+	<section class="doctors" id="doctors">
 		<div class="grid">
 			<div class="headline">
 				<div class="headline__title">Врачи</div>
@@ -247,7 +278,7 @@
 	</section>
 
 
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="grid">
 			<div class="contacts__card">
 				<p class="contacts__card-info">Москва,<br>1 красногвардейская 10<br>10:00 -20:00<br>каждый день по<br>предварительной записи</p>
@@ -272,10 +303,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="contacts__map" id="map"></div>
-</section>
+		<div class="contacts__map" id="map"></div>
+	</section>
 
 
 	<footer class="footer">
