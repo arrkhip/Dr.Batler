@@ -53,3 +53,39 @@ var swiper = new Swiper('.reviews__slider', {
     nextEl: '.reviews__slider-btn-next'
   }
 });
+
+
+
+// yandex map
+ymaps.ready(function(){
+  var myMap = new ymaps.Map("map", {
+    center: [55.756314, 37.511680],
+    zoom: 14,
+    controls: []
+  });
+
+  var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+      type: "Point", 
+      coordinates: [55.753387, 37.544306] 
+    }
+  });
+
+  var myPlacemark = new ymaps.Placemark([55.753387, 37.544306], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/icons/i-map-logo.png',
+    iconImageSize: [62, 62],
+    iconImageOffset: [-3, -42]
+  });
+
+  myMap.geoObjects.add(myPlacemark);
+  myMap.behaviors.disable('scrollZoom');
+
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+     myMap.behaviors.disable('drag');
+     myMap.setCenter([55.753387, 37.544306]);     
+   }
+ });
+
+});
